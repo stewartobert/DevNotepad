@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="modula2" Lexer="pascal">
+  <Folding>true</Folding>
+  <FoldComments>true</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>and array begin by case const definition div    do else elsif end exit except export finally    for forward from if implementation import in loop    mod module not of or packedset pointer procedure    qualified record rem retry repeat return set then    to type until var while with        abs bitset boolean cardinal cap chr char complex    cmplx dec dispose excl false float halt high    im inc incl int interruptible integer length lfloat    longcomplex longreal max min new nil odd ord    proc protection re real size true trunc uninterruptible    val</Keywords>
+    </Keyword>
+    <Keyword Name="Fold Start Words" Key="2">
+      <Keywords />
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Identifier" Key="1" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="{} Comment" Key="2" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="(**) Comment" Key="3" Template="commentbox" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Line Comment" Key="4" Template="commentline" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Preprocessor" Key="5" Template="preprocessor" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="(*$ Preprocessor" Key="6" Template="preprocessor" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="7" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Hex Number" Key="8" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="9" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="String" Key="10" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unclosed String" Key="11" Template="unclosedstring" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Character" Key="12" Template="character" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="13" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Inline Assembly" Key="14" Template="" Fore="804080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

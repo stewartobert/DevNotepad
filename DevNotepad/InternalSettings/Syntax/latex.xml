@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="latex" Lexer="latex">
+  <Folding>false</Folding>
+  <FoldComments>false</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords />
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Command" Key="1" Template="" Fore="aa0000" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Tag" Key="2" Template="" Fore="880088" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Math" Key="3" Template="" Fore="0000ff" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="4" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

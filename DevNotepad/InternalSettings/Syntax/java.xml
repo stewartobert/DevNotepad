@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="java" Lexer="cpp">
+  <Extensions>
+    <string>.java</string>
+  </Extensions>
+  <Folding>true</Folding>
+  <FoldComments>true</FoldComments>
+  <FoldCompact>true</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>true</FoldElse>
+  <AutoCloseBraces>true</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>abstract assert boolean break byte case catch char class const    continue default do double else extends final finally float for future    generic goto if implements import inner instanceof int interface long    native new null operator outer package private protected public rest    return short static super switch synchronized this throw throws    transient try var void volatile while</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Doc Comments" Key="3" Template="commentdoc" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="UUID" Key="8" Template="" Fore="804080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Line Doc" Key="15" Template="commentdoc" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keywords 2" Key="16" Template="" Fore="b00040" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Doc Keyword" Key="17" Template="commentdoc" Fore="3060a0" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unknown Comment Doc Keyword" Key="18" Template="commentdoc" Fore="804020" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="whitespace" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="1" Template="commentbox" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Line" Key="2" Template="commentline" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="4" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="5" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="String" Key="6" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Character" Key="7" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="10" Template="" Fore="" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Identifier" Key="11" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="End of line string" Key="12" Template="" Fore="000000" Back="e0c0e0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

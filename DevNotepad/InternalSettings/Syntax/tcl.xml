@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="tcl" Lexer="tcl">
+  <Folding>true</Folding>
+  <FoldComments>true</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>after append array auto_execok auto_import auto_load    auto_load_index auto_qualify beep binary break case catch cd clock    close concat continue dde default echo else elseif encoding eof    error eval exec exit expr fblocked fconfigure fcopy file    fileevent flush for foreach format gets glob global history if    incr info interp join lappend lindex linsert list llength load    lrange lreplace lsearch lsort namespace open package pid    pkg_mkIndex proc puts pwd read regexp regsub rename resource    return scan seek set socket source split string subst switch    tclLog tclMacPkgSearch tclPkgSetup tclPkgUnknown tell time    trace unknown unset update uplevel upvar variable vwait while</Keywords>
+    </Keyword>
+    <Keyword Name="TK Keywords" Key="1">
+      <Keywords>bell bind bindtags button canvas checkbutton console    destroy entry event focus font frame grab grid image label listbox menu    menubutton message pack place radiobutton raise scale scrollbar    text tk tkwait toplevel winfo wm</Keywords>
+    </Keyword>
+    <Keyword Name="TK Commands" Key="2">
+      <Keywords>tkButtonDown tkButtonEnter tkButtonInvoke    tkButtonLeave tkButtonUp tkCancelRepeat tkCheckRadioInvoke tkDarken    tkEntryAutoScan  tkEntryBackspace tkEntryButton1 tkEntryClosestGap    tkEntryInsert tkEntryKeySelect tkEntryMouseSelect tkEntryNextWord    tkEntryPaste tkEntryPreviousWord tkEntrySeeInsert tkEntrySetCursor    tkEntryTranspose tkEventMotifBindings tkFDGetFileTypes tkFirstMenu    tkFocusGroup_Destroy tkFocusGroup_In tkFocusGroup_Out tkFocusOK    tkListboxAutoScan tkListboxBeginExtend tkListboxBeginSelect    tkListboxBeginToggle tkListboxCancel tkListboxDataExtend    tkListboxExtendUpDown tkListboxMotion tkListboxSelectAll    tkListboxUpDown tkMbButtonUp tkMbEnter tkMbLeave tkMbMotion    tkMbPost tkMenuButtonDown tkMenuDownArrow tkMenuDup tkMenuEscape    tkMenuFind tkMenuFindName tkMenuFirstEntry tkMenuInvoke tkMenuLeave    tkMenuLeftArrow tkMenuMotion tkMenuNextEntry tkMenuNextMenu    tkMenuRightArrow tkMenuUnpost tkMenuUpArrow tkMessageBox    tkPostOverPoint tkRecolorTree tkRestoreOldGrab tkSaveGrabInfo    tkScaleActivate tkScaleButton2Down tkScaleButtonDown    tkScaleControlPress tkScaleDrag tkScaleEndDrag tkScaleIncrement    tkScreenChanged tkScrollButton2Down tkScrollButtonDown    tkScrollButtonUp tkScrollByPages tkScrollByUnits tkScrollDrag    tkScrollEndDrag tkScrollSelect tkScrollStartDrag tkScrollToPos     tkScrollTopBottom tkTabToWindow tkTearOffMenu tkTextAutoScan    tkTextButton1 tkTextClosestGap tkTextInsert tkTextKeyExtend    tkTextKeySelect tkTextNextPara tkTextNextPos tkTextNextWord    tkTextPaste tkTextPrevPara tkTextPrevPos tkTextResetAnchor    tkTextScrollPages tkTextSelectTo tkTextSetCursor tkTextTranspose    tkTextUpDownLine tkTraverseToMenu tkTraverseWithinMenu tk_bisque    tk_chooseColor tk_dialog tk_focusFollowsMouse tk_focusNext    tk_focusPrev tk_getOpenFile tk_getSaveFile tk_messageBox    tk_optionMenu tk_popup tk_setPalette tk_textCopy tk_textCut    tk_textPaste</Keywords>
+    </Keyword>
+    <Keyword Name="ITCL" Key="3">
+      <Keywords />
+    </Keyword>
+    <Keyword Name="Expand" Key="4">
+      <Keywords />
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="1" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Line Comment" Key="2" Template="commentline" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="3" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword in Quote" Key="4" Template="character" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Quote" Key="5" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="6" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Identifier" Key="7" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Substitution" Key="8" Template="preprocessor" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="${ Substitution" Key="9" Template="preprocessor" Fore="" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Modifier" Key="10" Template="character" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Expand" Key="11" Template="attribute" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="12" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword 2" Key="13" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword 3" Key="14" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword 4" Key="15" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Box" Key="20" Template="commentbox" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Block" Key="21" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

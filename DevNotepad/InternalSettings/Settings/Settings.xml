@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DefaultLanguage>default</DefaultLanguage>
+  <TabSize>4</TabSize>
+  <DefaultFont>Consolas</DefaultFont>
+  <DefaultFontSize>10</DefaultFontSize>
+  <DefaultForeColor>#000000</DefaultForeColor>
+  <DefaultBackColor>#ffffff</DefaultBackColor>
+  <Folding>true</Folding>
+  <LineNumbers>true</LineNumbers>
+  <UseOnlineHelp>-1</UseOnlineHelp>
+  <ShowLineNumbers>true</ShowLineNumbers>
+  <ShowFoldMargin>true</ShowFoldMargin>
+  <ShowLineBreaks>false</ShowLineBreaks>
+  <ShowTabsSpaces>false</ShowTabsSpaces>
+</Settings>

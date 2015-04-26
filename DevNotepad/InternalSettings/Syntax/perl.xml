@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="perl" Lexer="perl">
+  <Folding>true</Folding>
+  <FoldComments>false</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>NULL __FILE__ __LINE__ __PACKAGE__ __DATA__ __END__ AUTOLOAD    BEGIN CORE DESTROY END EQ GE GT INIT LE LT NE CHECK abs accept    alarm and atan2 bind binmode bless caller chdir chmod chomp chop    chown chr chroot close closedir cmp connect continue cos crypt    dbmclose dbmopen defined delete die do dump each else elsif endgrent    endhostent endnetent endprotoent endpwent endservent eof eq eval    exec exists exit exp fcntl fileno flock for foreach fork format    formline ge getc getgrent getgrgid getgrnam gethostbyaddr gethostbyname    gethostent getlogin getnetbyaddr getnetbyname getnetent getpeername    getpgrp getppid getpriority getprotobyname getprotobynumber getprotoent    getpwent getpwnam getpwuid getservbyname getservbyport getservent    getsockname getsockopt glob gmtime goto grep gt hex if index    int ioctl join keys kill last lc lcfirst le length link listen    local localtime lock log lstat lt m map mkdir msgctl msgget msgrcv    msgsnd my ne next no not oct open opendir or ord our pack package    pipe pop pos print printf prototype push q qq qr quotemeta qu    qw qx rand read readdir readline readlink readpipe recv redo    ref rename require reset return reverse rewinddir rindex rmdir    s scalar seek seekdir select semctl semget semop send setgrent    sethostent setnetent setpgrp setpriority setprotoent setpwent    setservent setsockopt shift shmctl shmget shmread shmwrite shutdown    sin sleep socket socketpair sort splice split sprintf sqrt srand    stat study sub substr symlink syscall sysopen sysread sysseek    system syswrite tell telldir tie tied time times tr truncate    uc ucfirst umask undef unless unlink unpack unshift untie until    use utime values vec wait waitpid wantarray warn while write    x xor y</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="" Fore="808080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Error" Key="1" Template="error" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="2" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="POD" Key="3" Template="" Fore="004000" Back="e0ffe0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="4" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="5" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double Quoted String" Key="6" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Single Quoted String" Key="7" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="10" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Identifier" Key="11" Template="identifier" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Scalar: $var" Key="12" Template="" Fore="4b0082" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Array: @var" Key="13" Template="" Fore="00005e" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Hash: %var" Key="14" Template="" Fore="00008b" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Symbol Table: *var" Key="15" Template="" Fore="" Back="e0e0e0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Regex: /re/ or m{re}" Key="17" Template="" Fore="" Back="a0ffa0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Substitution: s/re/ore/" Key="18" Template="" Fore="" Back="f0e080" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Back Ticks" Key="20" Template="" Fore="ffff00" Back="a08080" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Data Section" Key="21" Template="" Fore="600000" Back="fff0d8" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Generic Single Quoted String" Key="26" Template="" Fore="7f007f" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="qq = Double Quoted String" Key="27" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="qx = Back Ticks" Key="28" Template="" Fore="ffff00" Back="a08080" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="qr = Regex" Key="29" Template="" Fore="" Back="a0ffa0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="qw = Array" Key="30" Template="" Fore="00005e" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Delimiter" Key="22" Template="" Fore="000000" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Single Quoted (q)" Key="23" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double Quoted (qq)" Key="24" Template="" Fore="" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Back Ticks (qx)" Key="25" Template="" Fore="" Back="" Bold="false" Italic="true" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

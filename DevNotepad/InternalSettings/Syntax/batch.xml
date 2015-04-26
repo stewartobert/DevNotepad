@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="batch" Lexer="batch">
+  <Extensions>
+    <string>.bat</string>
+  </Extensions>
+  <Folding>false</Folding>
+  <FoldComments>false</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>rem set if exist errorlevel for in do    break call chcp cd chdir choice cls country ctty date del erase dir echo    exit goto loadfix loadhigh mkdir md move path pause prompt rename ren    rmdir rd shift time type ver verify vol com con lpt nul</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="1" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="2" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Label" Key="3" Template="" Fore="ffff00" Back="606060" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Hide command char '@'" Key="4" Template="preprocessor" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="External commands" Key="5" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Variable (%x)" Key="6" Template="" Fore="" Back="ffffe0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="7" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

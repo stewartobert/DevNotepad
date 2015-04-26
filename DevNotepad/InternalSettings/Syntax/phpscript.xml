@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="phpscript" Lexer="phpscript">
+  <Folding>true</Folding>
+  <FoldComments>false</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="PHP Keywords" Key="4">
+      <Keywords>and argv as argc break case cfunction class continue declare default do    die echo else elseif empty enddeclare endfor endforeach endif endswitch    endwhile e_all e_parse e_error e_warning eval exit extends false for    foreach function global http_cookie_vars http_get_vars http_post_vars    http_post_files http_env_vars http_server_vars if include include_once    list new not null old_function or parent php_os php_self php_version    print require require_once return static switch stdclass this true var    xor virtual while __file__ __line__ __sleep __wakeup</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="118" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double quoted String" Key="119" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Single quoted string" Key="120" Template="character" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="121" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="122" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Variable" Key="123" Template="variable" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="124" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Line comment" Key="125" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="String variable" Key="126" Template="" Fore="00007F" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="127" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Non-PHP" Key="32" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

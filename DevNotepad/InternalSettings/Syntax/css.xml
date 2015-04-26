@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="css" Lexer="css">
+  <Extensions>
+    <string>.css</string>
+  </Extensions>
+  <Folding>false</Folding>
+  <FoldComments>false</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>true</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="CSS 1" Key="0">
+      <Keywords>font-family font-style font-variant font-weight font-size font    color background-color background-image background-repeat background-attachment background-position background    word-spacing letter-spacing text-decoration vertical-align text-transform text-align text-indent line-height    margin-top margin-right margin-bottom margin-left margin    padding-top padding-right padding-bottom padding-left padding    border-top-width border-right-width border-bottom-width border-left-width border-width    border-top border-right border-bottom border-left border    border-color border-style width height float clear    display white-space list-style-type list-style-image list-style-position list-style</Keywords>
+    </Keyword>
+    <Keyword Name="pseudo Classes" Key="1">
+      <Keywords>first-letter first-line link active visited first-child focus hover lang before after left right first</Keywords>
+    </Keyword>
+    <Keyword Name="CSS 2" Key="2">
+      <Keywords>border-top-color border-right-color border-bottom-color border-left-color border-color    border-top-style border-right-style border-bottom-style border-left-style border-style    top right bottom left position z-index direction unicode-bidi    min-width max-width min-height max-height overflow clip visibility content quotes    counter-reset counter-increment marker-offset    size marks page-break-before page-break-after page-break-inside page orphans widows    font-stretch font-size-adjust unicode-range units-per-em src    panose-1 stemv stemh slope cap-height x-height ascent descent widths bbox definition-src    baseline centerline mathline topline text-shadow    caption-side table-layout border-collapse border-spacing empty-cells speak-header    cursor outline outline-width outline-style outline-color    volume speak pause-before pause-after pause cue-before cue-after cue    play-during azimuth elevation speech-rate voice-family pitch pitch-range stress richness    speak-punctuation speak-numeral</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Text" Key="0" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Selector (HTML tag)" Key="1" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Class selector" Key="2" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Pseudo class" Key="3" Template="" Fore="800000" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unknown pseudo" Key="4" Template="" Fore="ff0000" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="5" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Property" Key="6" Template="" Fore="0000b0" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unknown Property" Key="7" Template="" Fore="fa0000" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Value" Key="8" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="9" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="ID selector (#IdSel)" Key="10" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Important" Key="11" Template="" Fore="ff8000" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="At-rule (@)" Key="12" Template="preprocessor" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double-Quoted Strings" Key="13" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Single-Quoted Strings" Key="14" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="CSS 2 Property" Key="15" Template="" Fore="00a0e0" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Attribute Selection [att='val']" Key="16" Template="" Fore="800000" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

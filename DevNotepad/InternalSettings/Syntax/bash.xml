@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="bash" Lexer="bash">
+  <Folding>false</Folding>
+  <FoldComments>false</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>alias    ar asa awk banner basename bash bc bdiff break    bunzip2 bzip2 cal calendar case cat cc cd chmod cksum    clear cmp col comm compress continue cp cpio crypt    csplit ctags cut date dc dd declare deroff dev df diff diff3    dircmp dirname do done du echo ed egrep elif else env    esac eval ex exec exit expand export expr false fc    fgrep fi file find fmt fold for function functions    getconf getopt getopts grep gres hash head help    history iconv id if in integer jobs join kill local lc    let line ln logname look ls m4 mail mailx make    man mkdir more mt mv newgrp nl nm nohup ntps od    pack paste patch pathchk pax pcat perl pg pr print    printf ps pwd read readonly red return rev rm rmdir    sed select set sh shift size sleep sort spell    split start stop strings strip stty sum suspend    sync tail tar tee test then time times touch tr    trap true tsort tty type typeset ulimit umask unalias    uname uncompress unexpand uniq unpack unset until    uudecode uuencode vi vim vpax wait wc whence which    while who wpaste wstart xargs zcat</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="" Fore="808080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Error" Key="1" Template="error" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="2" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="3" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keywords" Key="4" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double Quotes String" Key="5" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Single Quotes String" Key="6" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operators" Key="7" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Identifiers" Key="8" Template="identifier" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Scalars: $var" Key="9" Template="identifier" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Parameter expansion: ${var}" Key="10" Template="identifier" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Back Ticks" Key="11" Template="" Fore="ffff00" Back="a08080" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Here-doc (delimiter)" Key="12" Template="" Fore="000000" Back="ddd0dd" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="d" Lexer="d">
+  <Folding>true</Folding>
+  <FoldComments>true</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>true</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>false</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>#line __traits __FILE__ __LINE__    __DATE__ __TIME__ __TIMESTAMP__ __VENDOR__ __VERSION__    abstract alias align asm assert auto body bool     break byte case cast catch cdouble cent cfloat char class     const continue creal dchar debug default delegate delete     deprecated do double else enum export extern false final finally     float for foreach foreach_reverse function goto idouble if     ifloat import in inout int immutable interface invariant ireal is lazy     long mixin module new nothrow null out override package pragma private     protected public pure real ref return scope short static struct super     switch synchronized template this throw true try typedef typeid     typeof ubyte ucent uint ulong union unittest ushort version void     volatile wchar while with</Keywords>
+    </Keyword>
+    <Keyword Name="Doxygen Keywords" Key="2">
+      <Keywords>a addindex addtogroup anchor arg attention    author b brief bug c class code date def defgroup deprecated dontinclude    e em endcode endhtmlonly endif endlatexonly endlink endverbatim enum example exception    f$ f[ f] file fn hideinitializer htmlinclude htmlonly    if image include ingroup internal invariant interface latexonly li line link    mainpage name namespace nosubgrouping note overload    p page par param post pre ref relates remarks return retval    sa section see showinitializer since skip skipline struct subsection    test throw todo typedef union until    var verbatim verbinclude version warning weakgroup $ @ \ &amp; &lt; &gt; # { }</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="1" Template="commentbox" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Line" Key="2" Template="commentline" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Doc" Key="3" Template="commentdoc" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Nested" Key="4" Template="commentbox" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="5" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="6" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="7" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="8" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="9" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="String" Key="10" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="End of line string" Key="11" Template="" Fore="000000" Back="e0c0e0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Character" Key="12" Template="character" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="13" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Identifier" Key="14" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Line Doc" Key="15" Template="commentdoc" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Doc Keyword" Key="16" Template="commentdoc" Fore="3060a0" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unknown Comment Doc Keyword" Key="17" Template="commentdoc" Fore="804020" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

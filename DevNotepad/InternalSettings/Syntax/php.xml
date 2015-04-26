@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="php" Lexer="hypertext">
+  <Folding>true</Folding>
+  <FoldComments>false</FoldComments>
+  <FoldCompact>false</FoldCompact>
+  <FoldPreprocessors>false</FoldPreprocessors>
+  <FoldElse>false</FoldElse>
+  <AutoCloseBraces>true</AutoCloseBraces>
+  <AutoCloseTags>true</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Hypertext" Key="0">
+      <Keywords>public !doctype a abbr acronym address applet area aside audio b base basefont    bdo big blockquote body br button canvas caption center    cite code col colgroup command datalist dd del details dfn dir div dl dt em    embed fieldset figcaption figure font footer form frame frameset h1 h2 h3 h4 h5 h6    head header hgroup hr html i iframe img input ins kbd keygen label    legend li link map mark menu meta meter nav noframes noscript    object ol optgroup option output p param pre progress q rp rt ruby s samp    script section select small source span strike strong style sub summary sup    table tbody td textarea tfoot th thead time title tr tt u ul    var video wbr xml xmp xmlns abbr accept-charset accept accesskey action align alink    alt archive autocomplete autofocus axis background bgcolor border    cellpadding cellspacing char charoff charset checkbox checked cite    class classid clear codebase codetype color cols colspan    compact content contenteditable contextmenu coords    data datafld dataformatas datapagesize datasrc datetime    declare defer dir disabled draggable dropzone encoding enctype event    face file for form formaction formenctype formmethod formnovalidate formtarget frame frameborder    headers height hidden href hreflang hspace http-equiv    id image ismap label lang language leftmargin link list longdesc    marginwidth marginheight max maxlength media method min multiple    name nohref noresize noshade novalidate nowrap    object onabort onafterprint onbeforeprint onbeforeonload onblur oncanplay oncanplaythrough onchange onclick oncontextmenu ondblclick ondrag ondragend ondragenter ondragleave ondragover ondragstart ondrop ondurationchange onemptied onended onerror onfocus onformchange onforminput onhaschange    oninput oninvalid onkeydown onkeypress onkeyup onload onloadeddata onloadedmetadata onloadstart onmessage onmousedown    onmousemove onmouseover onmouseout onmouseup onmousewheel    onoffline ononline onpagehide onpageshow onpause onplay onplaying onprogress onpopstate onratechange onreadystatechange onredo    onreset onresize onscroll onseeked onseeking onselect onstalled onstorage onsubmit onsuspend ontimeupdate onundo onunload onvolumechange onwaiting    password pattern placeholder profile prompt radio readonly rel required reset rev rows rowspan rules    scheme scope selected shape size span spellcheck src standby start step style submit    summary tabindex target text title topmargin type usemap    valign value valuetype version vlink vspace width    xml:lang</Keywords>
+    </Keyword>
+    <Keyword Name="Javascript" Key="1">
+      <Keywords />
+    </Keyword>
+    <Keyword Name="PHP Keywords" Key="4">
+      <Keywords>and argv as argc break case cfunction class continue declare default do    die echo else elseif empty enddeclare endfor endforeach endif endswitch    endwhile e_all e_parse e_error e_warning eval exit extends false for    foreach function global http_cookie_vars http_get_vars http_post_vars    http_post_files http_env_vars http_server_vars if include include_once    list new not null old_function or parent php_os php_self php_version    print require require_once return static switch stdclass this true var    xor virtual while __file__ __line__ __sleep __wakeup namespace using public private protected class use</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Margin Fore" Key="3" Template="marginfore" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Margin Back" Key="2" Template="marginback" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Brace Match" Key="34" Template="bracematch" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Brace Mismatch" Key="35" Template="bracemismatch" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Text" Key="0" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Default" Key="118" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double quoted String" Key="38" Template="temp" Fore="00007F" Back="00007F" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Functions" Key="74" Template="function" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Classes" Key="76" Template="object" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double quoted String" Key="119" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Single quoted string" Key="120" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="121" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="122" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Variable" Key="123" Template="number" Fore="B0454C" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="124" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Line comment" Key="125" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="String variable" Key="126" Template="" Fore="00007F" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="127" Template="operator" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Tags" Key="1" Template="tag" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unknown Tags" Key="2" Template="unknowntag" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Attributes" Key="3" Template="attribute" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Property" Key="71" Template="identifier" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="namespace" Key="70" Template="namespace" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unknown Attributes" Key="4" Template="unknownattribute" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Numbers" Key="5" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Double Quoted Strings" Key="6" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Single Quoted Strings" Key="7" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Other inside tag" Key="8" Template="" Fore="800080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="9" Template="comment" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Entity" Key="10" Template="" Fore="800080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="XML style tag ends /&gt;" Key="11" Template="" Fore="000080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="XML Identifier start &lt; ?" Key="12" Template="" Fore="0000ff" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="XML Identifier end ?&gt;" Key="13" Template="" Fore="0000ff" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Script" Key="14" Template="" Fore="000080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="CDATA" Key="17" Template="" Fore="" Back="ffdf00" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="PHP" Key="18" Template="" Fore="0000ff" Back="ffefbf" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Unquoted Values" Key="19" Template="" Fore="ff00ff" Back="ffefff" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

@@ -1,0 +1,90 @@
+#Top level menus main form.
+FILE: &File
+EDIT: &Edit
+SEARCH:	&Search
+VIEW: &View
+SYNTAX: &Syntax
+SETTINGS: &Settings
+RUN: &Run
+PLUGINS: &Plugins
+WINDOW: &Window
+HELP: &Help
+#File Menu main form
+NEW: &New	New Document
+OPEN: &Open	Open existing file
+RELOAD: &Reload	Reload current file
+CLOSE: &Close	Close the current document
+CLOSEALL: Cl&ose All	Close all open documents
+CLOSEALLBUT: Close All &But Current	Closes all but currently open document
+SAVE: &Save	Save the current document
+SAVEAS: Save &As	Save the current document as a new file
+SAVEALL: Save A&ll	Save all open documents
+EXIT: &Exit	Exit DevNotepad
+
+#Edit Menu
+
+UNDO: &Undo	Undo the last action
+REDO: &Redo	Redo the last undone action
+CUT: C&ut	Cut currently selected text and store in the clipboard
+COPY: &Copy	Copy the currently selected text to the clipboard
+PASTE: &Paste	Paste the contents of the clipboard to the current document.
+DELETE: &Delete	Delete the character to the right
+DELETEWORDRIGHT: Delete Word &Right	Delete the word immediately to the right of the cursor
+DELETEWORDLEFT: Delete Word &Left	Delete the word immediately to the left of the cursor
+SELECTALL: &Select All	Select all text in the document
+INDENT: &Indent Selection	Indent the selection
+UNINDENT: &Unindent Selection Unindent the selection
+COMMENTBLOCK: Comment &Block	Block comment selection
+UNCOMMENTBLOCK: U&ncomment Block	Remove block comment
+COMMENTSTREAM: Comment &Stream	Stream comment selection
+UNCOMMENTSTREAM: &Uncomment Stream Remove stream comment
+
+#Search Menu
+FIND: &Find
+FINDINFILES: Find in F&iles
+FINDNEXT: Find &Next
+FINDPREVIOUS: Find &Previous
+REPLACE: Replace
+GOTO: Goto Position
+TOGGLEBOOKMARK: Toggle &Bookmark
+NEXTBOOKMARK: &Next Bookmark
+PREVIOUSBOOKMARK: &Previous Bookmark
+
+
+#View Menu
+THEMES: &Themes	Choose the currently active syntax theme.
+
+#Help Menu
+DOCUMENTATION: &Documentation
+WEBSITE: DevNotepad &Website
+TWITTER: DevNotepad on &Twitter
+CHECKUPDATES: &Check for Updates
+ABOUT: &About DevNotepad
+README: &Readme
+
+
+#Buttons/Forms/ETC
+COUNT: &Count All
+FINDINOPENDOCUMENTS: Find in all &Documents
+FINDALL: Find All &Instances
+CANCEL: Cancel
+NORMAL: &Normal
+EXTENDED: E&xtended (\r, \t, \0, \x, ...)
+REGULAREXPRESSION: Re&gular Expression
+UP: &Up
+DOWN: &Down
+CLOSEWHENDONE: Close when &Done
+
+#Find form
+MATCHWHOLEWORDONLY: Match &whole word only
+MATCHCASE: Match &case
+WRAPAROUND: &Wrap at end of document
+#Messages
+INVALIDFILENAME: The file "{0}" could not be found.
+ERROROPENINGFILE: An error occurred while opening file "{0}"\n{1}
+LOADINGFILE: Loading File ({0} of {1}): "{2}"\nFile Size: {3}MB
+
+SEARCHNOTFOUND: The search query "{0}" could not be found.
+SEARCHSTRINGNULL: A search query must be entered.
+
+BINARYFILE: The file you are attempting to open is a binary file\nIf you open a binary file saving it will likely damage the file.\nDo you wish to continue and open this file?

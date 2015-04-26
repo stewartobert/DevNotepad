@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="csharp" Lexer="cpp" IndentType="cpp">
+  <Extensions>
+    <string>.cs</string>
+  </Extensions>
+  <Folding>true</Folding>
+  <FoldComments>true</FoldComments>
+  <FoldCompact>true</FoldCompact>
+  <FoldPreprocessors>true</FoldPreprocessors>
+  <FoldElse>true</FoldElse>
+  <AutoCloseBraces>true</AutoCloseBraces>
+  <AutoCloseTags>false</AutoCloseTags>
+  <AutoCloseStrings>true</AutoCloseStrings>
+  <Keywords>
+    <Keyword Name="Keywords" Key="0">
+      <Keywords>abstract as base break case catch checked continue default delegate do else event explicit extern false finally fixed for foreach get goto if implicit in interface internal is lock long namespace new null object operator out override params partial private protected public readonly ref return sbyte sealed set short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using virtual void while</Keywords>
+    </Keyword>
+    <Keyword Name="additional" Key="1">
+      <Keywords>bool byte char class const decimal double enum float int long sbyte short static string struct uint ulong ushort void</Keywords>
+    </Keyword>
+  </Keywords>
+  <Styles>
+    <Style Name="Default" Key="32" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Brace Match" Key="34" Template="bracematch" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Brace Mismatch" Key="35" Template="bracemismatch" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Text" Key="0" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Doc Comments" Key="3" Template="commentdoc" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="UUID" Key="8" Template="" Fore="804080" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Preprocessor" Key="9" Template="preprocessor" Fore="ff0000" Back="" Bold="false" Italic="true" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Verbatim" Key="13" Template="" Fore="007f00" Back="e0ffe0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="RegEx" Key="14" Template="" Fore="3f7f3f" Back="e0f0ff" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Line Doc" Key="15" Template="commentdoc" Fore="" Back="" Bold="false" Italic="true" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keywords 2" Key="16" Template="keyword2" Fore="#134c89" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Whitespace" Key="0" Template="whitespace" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment" Key="1" Template="commentbox" Fore="" Back="" Bold="false" Italic="true" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Comment Line" Key="2" Template="commentline" Fore="" Back="" Bold="false" Italic="true" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Number" Key="4" Template="number" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Keyword" Key="5" Template="keyword" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="String" Key="6" Template="string" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Character" Key="7" Template="default" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Operator" Key="10" Template="" Fore="" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="Identifier" Key="11" Template="" Fore="" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+    <Style Name="End of line string" Key="12" Template="" Fore="000000" Back="e0c0e0" Bold="false" Italic="false" Underline="false" EOLFilled="false" FontSize="10" />
+  </Styles>
+</Scheme>

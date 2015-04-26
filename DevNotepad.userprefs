@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="DevNotepad\DevNotepad.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdParty\WinFormsUI\Docking\DockPane.cs">
+    <Files>
+      <File FileName="DevNotepad\App.config" Line="19" Column="19" />
+      <File FileName="DevNotepad\Models\FindList.cs" Line="22" Column="22" NotebookId="1" />
+      <File FileName="ThirdParty\WinFormsUI\Docking\DockPane.cs" Line="68" Column="68" NotebookId="1" />
+      <File FileName="DevNotepad\packages.config" Line="12" Column="12" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

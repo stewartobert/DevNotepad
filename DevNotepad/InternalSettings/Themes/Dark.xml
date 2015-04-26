@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Dark" FoldBackground="#272822" CursorColor="#ffffff">
+  <Presets>
+    <item>
+      <key>
+        <string>default</string>
+      </key>
+      <value>
+        <PresetStyle Name="default" Fore="#ffffff" Back="#272822" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>marginfore</string>
+      </key>
+      <value>
+        <PresetStyle Name="marginfore" Fore="#3e3d32" Back="#3e3d32" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>comment</string>
+      </key>
+      <value>
+        <PresetStyle Name="comment" Fore="#d500d5" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>keyword</string>
+      </key>
+      <value>
+        <PresetStyle Name="keyword" Fore="#f47a00" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>string</string>
+      </key>
+      <value>
+        <PresetStyle Name="string" Fore="#5fff61" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>number</string>
+      </key>
+      <value>
+        <PresetStyle Name="number" Fore="#fafafa" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>identifier</string>
+      </key>
+      <value>
+        <PresetStyle Name="identifier" Fore="#fddf39" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>operator</string>
+      </key>
+      <value>
+        <PresetStyle Name="operator" Fore="#ffffff" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>preprocessor</string>
+      </key>
+      <value>
+        <PresetStyle Name="preprocessor" Fore="#7f7f00" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>error</string>
+      </key>
+      <value>
+        <PresetStyle Name="error" Fore="#ffff00" Back="#ff0000" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>commentdoc</string>
+      </key>
+      <value>
+        <PresetStyle Name="commentdoc" Fore="#3f703f" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+  </Presets>
+  <UITheme>
+    <TabBackGradientStart>#494949</TabBackGradientStart>
+    <TabBackGradientEnd>#505050</TabBackGradientEnd>
+    <ActiveTabStart>#2c2c2c</ActiveTabStart>
+    <ActiveTabEnd>#272822</ActiveTabEnd>
+    <TabStart>#656565</TabStart>
+    <TabEnd>#444444</TabEnd>
+    <TabFore>#c7c7b4</TabFore>
+    <ActiveTabFore>#ffffff</ActiveTabFore>
+	<TitleStart>#656565</TitleStart>
+	<TitleEnd>#444444</TitleEnd>
+	<MainBG>#272822</MainBG>
+  </UITheme>
+</Theme>

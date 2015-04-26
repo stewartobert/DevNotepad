@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C31180A-45C8-418D-9439-35EBC3061B42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevNotepad</RootNamespace>
+    <AssemblyName>DevNotepad</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>three_cube.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Shared.WinForms, Version=14.1.321.0, Culture=neutral, PublicKeyToken=c27e062d3c1a4763, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\Paths.cs" />
+    <Compile Include="Config\Schemes.cs" />
+    <Compile Include="Config\Themes.cs" />
+    <Compile Include="Debug\Log.cs" />
+    <Compile Include="GUI\Controls\ColorComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Controls\ColorComboBox.designer.cs">
+      <DependentUpon>ColorComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Controls\DoubleBufferedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Controls\LabelCombo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Controls\LabelCombo.Designer.cs">
+      <DependentUpon>LabelCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Controls\LabelControl.cs" />
+    <Compile Include="GUI\Controls\PlaceholderTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Controls\RadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Controls\RadioGroup.Designer.cs" />
+    <Compile Include="GUI\Controls\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Design\CustomFloatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Design\CustomToolstripRenderer.cs" />
+    <Compile Include="GUI\Forms\Docking\FormFileBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormFileBrowser.Designer.cs">
+      <DependentUpon>FormFileBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormFindInFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormFindInFiles.Designer.cs">
+      <DependentUpon>FormFindInFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormOpenDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormOpenDocs.Designer.cs">
+      <DependentUpon>FormOpenDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormOutline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormOutline.Designer.cs">
+      <DependentUpon>FormOutline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormOutput.Designer.cs">
+      <DependentUpon>FormOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\Docking\FormProject.Designer.cs">
+      <DependentUpon>FormProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\FormDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\FormDocument.Designer.cs">
+      <DependentUpon>FormDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\FormFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\FormFind.Designer.cs">
+      <DependentUpon>FormFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\FormGoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\FormGoto.Designer.cs">
+      <DependentUpon>FormGoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\FormReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\FormReplace.Designer.cs">
+      <DependentUpon>FormReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Settings\GeneralSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Settings\GeneralSettings.Designer.cs">
+      <DependentUpon>GeneralSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Settings\SchemeSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Settings\SchemeSettings.Designer.cs">
+      <DependentUpon>SchemeSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Settings\ThemeSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Settings\ThemeSettings.Designer.cs">
+      <DependentUpon>ThemeSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FindList.cs" />
+    <Compile Include="Models\Storage\FormObject.cs" />
+    <Compile Include="Models\Languages\Language.cs" />
+    <Compile Include="Models\Syntax\AutoComplete.cs" />
+    <Compile Include="Models\Syntax\Keyword.cs" />
+    <Compile Include="Models\Syntax\Style.cs" />
+    <Compile Include="Models\Syntax\Scheme.cs" />
+    <Compile Include="Models\Themes\Theme.cs" />
+    <Compile Include="Models\Themes\PresetStyle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\DockingManager.cs" />
+    <Compile Include="Tools\DocumentManager.cs" />
+    <Compile Include="Tools\FormState.cs" />
+    <Compile Include="Tools\LanguageManager.cs" />
+    <Compile Include="Tools\PluginHost.cs" />
+    <Compile Include="Tools\PluginsManager.cs" />
+    <Compile Include="Tools\XmlMatchedTagHighlighter.cs" />
+    <EmbeddedResource Include="GUI\Controls\ColorComboBox.resx">
+      <DependentUpon>ColorComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Controls\LabelCombo.resx">
+      <DependentUpon>LabelCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Controls\RadioGroup.resx" />
+    <EmbeddedResource Include="GUI\Forms\Docking\FormFileBrowser.resx">
+      <DependentUpon>FormFileBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\Docking\FormFindInFiles.resx">
+      <DependentUpon>FormFindInFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\Docking\FormOpenDocs.resx">
+      <DependentUpon>FormOpenDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\Docking\FormOutline.resx">
+      <DependentUpon>FormOutline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\Docking\FormOutput.resx">
+      <DependentUpon>FormOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\Docking\FormProject.resx">
+      <DependentUpon>FormProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\FormDocument.resx">
+      <DependentUpon>FormDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\FormFind.resx">
+      <DependentUpon>FormFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\FormGoto.resx">
+      <DependentUpon>FormGoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\FormReplace.resx">
+      <DependentUpon>FormReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Settings\ThemeSettings.resx">
+      <DependentUpon>ThemeSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="InternalSettings\Readme.md" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Readme.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevNotepad.Library\DevNotepad.Library.csproj">
+      <Project>{0669fe8a-c021-4a55-ad82-9e6011aecea2}</Project>
+      <Name>DevNotepad.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevNotepad.PluginFramework\DevNotepad.PluginFramework.csproj">
+      <Project>{22fff6ec-efca-4377-be23-c49d4ba548da}</Project>
+      <Name>DevNotepad.PluginFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\ScintillaNET\ScintillaNET.csproj">
+      <Project>{f9b6dabd-bbc1-4638-8ce6-a5c9506bfdcb}</Project>
+      <Name>ScintillaNET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\WinFormsUI\WinFormsUI.csproj">
+      <Project>{c75532c4-765b-418e-b09b-46d36b2abdb1}</Project>
+      <Name>WinFormsUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InternalSettings\Parsers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolstrip_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statusbar_image.png" />
+    <Content Include="three_cube.ico" />
+    <EmbeddedResource Include="InternalSettings\Languages\English.txt" />
+    <EmbeddedResource Include="InternalSettings\Plugins\Html.Helper.dll" />
+    <EmbeddedResource Include="InternalSettings\Settings\Docking.xml" />
+    <EmbeddedResource Include="InternalSettings\Settings\FormFind.xml" />
+    <EmbeddedResource Include="InternalSettings\Settings\Settings.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\ada.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\asm.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\bash.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\batch.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\cpp.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\csharp.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\css.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\d.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\default.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\diff.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\docbook.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\fortran.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\fortran77.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\idl.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\java.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\javascript.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\latex.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\lisp.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\lua.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\makefile.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\matlab.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\modula2.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\NSIS.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\octave.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\output.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\pascal.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\perl.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\php.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\phpscript.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\plsql.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\powershell.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\properties.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\python.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\ruby.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\scheme.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\specman.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\sql.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\tcl.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\vb.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\vbscript.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\verilog.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\vhdl.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\web.xml" />
+    <EmbeddedResource Include="InternalSettings\Syntax\xml.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\Dark.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\Default.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\Murky.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\Obsidian.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\Sunburst.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\Turbo.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\Wombat.xml" />
+    <EmbeddedResource Include="InternalSettings\Themes\ZenBurn.xml" />
+    <None Include="Resources\statusbar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Obsidian" FoldBackground="#293134">
+  <Presets>
+    <item>
+      <key>
+        <string>aspjs</string>
+      </key>
+      <value>
+        <PresetStyle Name="aspjs" Fore="#c0c0c0" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>aspvbs</string>
+      </key>
+      <value>
+        <PresetStyle Name="aspvbs" Fore="#c0c0c0" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>attribute</string>
+      </key>
+      <value>
+        <PresetStyle Name="attribute" Fore="#b3b689" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>boxcomment</string>
+      </key>
+      <value>
+        <PresetStyle Name="boxcomment" Fore="#66747b" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>bracematch</string>
+      </key>
+      <value>
+        <PresetStyle Name="bracematch" Fore="#f3db2e" Back="#293134" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>bracemismatch</string>
+      </key>
+      <value>
+        <PresetStyle Name="bracemismatch" Fore="#fb0000" Back="#293134" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>character</string>
+      </key>
+      <value>
+        <PresetStyle Name="character" Fore="#ff8409" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>classname</string>
+      </key>
+      <value>
+        <PresetStyle Name="classname" Fore="#e0e2e4" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>comment</string>
+      </key>
+      <value>
+        <PresetStyle Name="comment" Fore="#66747b" Back="" Bold="false" Italic="true" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>commentline</string>
+      </key>
+      <value>
+        <PresetStyle Name="commentline" Fore="#66747b" Back="" Bold="false" Italic="true" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>controlchars</string>
+      </key>
+      <value>
+        <PresetStyle Name="controlchars" Fore="#ff8409" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>default</string>
+      </key>
+      <value>
+        <PresetStyle Name="default" Fore="#e0e2e4" Back="#293134" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>embeddedvbs</string>
+      </key>
+      <value>
+        <PresetStyle Name="embeddedvbs" Fore="#c0c0c0" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>error</string>
+      </key>
+      <value>
+        <PresetStyle Name="error" Fore="#e0e2e4" Back="#2f2f2f" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>function</string>
+      </key>
+      <value>
+        <PresetStyle Name="function" Fore="#e0e2e4" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>identifier</string>
+      </key>
+      <value>
+        <PresetStyle Name="identifier" Fore="#e0e2e4" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>keyword</string>
+      </key>
+      <value>
+        <PresetStyle Name="keyword" Fore="#93c763" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>linenumbers</string>
+      </key>
+      <value>
+        <PresetStyle Name="linenumbers" Fore="#81969a" Back="#3f4b4e" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>number</string>
+      </key>
+      <value>
+        <PresetStyle Name="number" Fore="#ffcd22" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>operator</string>
+      </key>
+      <value>
+        <PresetStyle Name="operator" Fore="#e8e2b7" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>preprocessor</string>
+      </key>
+      <value>
+        <PresetStyle Name="preprocessor" Fore="#a082bd" Back="" Bold="true" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>string</string>
+      </key>
+      <value>
+        <PresetStyle Name="string" Fore="#e1e2cf" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>tag</string>
+      </key>
+      <value>
+        <PresetStyle Name="tag" Fore="#678cb1" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>type</string>
+      </key>
+      <value>
+        <PresetStyle Name="type" Fore="#678cb1" Back="" Bold="false" Italic="false" Underline="false" EOLFilled="false" Font="Courier New" FontSize="10" />
+      </value>
+    </item>
+  </Presets>
+  <UITheme>
+    <TabBackGradientStart />
+    <TabBackGradientEnd />
+    <ActiveTabStart />
+    <ActiveTabEnd />
+    <TabStart />
+    <TabEnd />
+    <TabFore />
+    <ActiveTabFore />
+  </UITheme>
+</Theme>
