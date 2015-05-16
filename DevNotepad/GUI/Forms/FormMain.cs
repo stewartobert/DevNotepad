@@ -534,7 +534,11 @@ namespace DevNotepad.GUI.Forms
         private void MenuAppConfig_Click(object sender, EventArgs e)
         {
             FormSettings settings = new FormSettings();
-            settings.ShowDialog();
+            if(settings.ShowDialog() == System.Windows.Forms.DialogResult.OK){
+
+                Themes.SavePresets();
+
+            }
         }
 
         private void MenuWebsite_Click(object sender, EventArgs e)

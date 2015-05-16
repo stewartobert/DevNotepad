@@ -17,7 +17,7 @@ namespace DevNotepad.Tools
         {
             int docStart = 0;
             int docEnd = scintilla.NativeInterface.GetLength();
-            scintilla.NativeInterface.SetIndicatorCurrent(8);
+            scintilla.NativeInterface.SetIndicatorCurrent(4);
             scintilla.NativeInterface.IndicatorClearRange(docStart, docEnd - docStart);
 
             string[] codeBeginTag = { "<?", "<%" };
@@ -43,7 +43,7 @@ namespace DevNotepad.Tools
             if (MatchingTag.getXmlMatchedTagsPos(scintilla, ref xmlTags, prevChar))
             {
 
-                scintilla.NativeInterface.SetIndicatorCurrent(8);
+                scintilla.NativeInterface.SetIndicatorCurrent(4);
                 
                 if (xmlTags.tagCloseStart != -1 && xmlTags.tagCloseEnd != -1)
                 {

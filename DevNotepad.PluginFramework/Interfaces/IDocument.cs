@@ -23,6 +23,10 @@ namespace DevNotepad.PluginFramework.Interfaces
         /// Unmodified tab text
         /// </summary>
         string BaseTabText { get; set; }
-       
+
+        /// <summary>
+        /// Returns the document text.
+        /// </summary>
+        string DocumentText { get; set; }
     }
 }

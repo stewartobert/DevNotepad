@@ -53,12 +53,12 @@ namespace WeifenLuo.WinFormsUI.Docking
         }
 
         #region consts
-        private const int _TextGapTop = 10;
-        private const int _TextGapBottom = 10;
+        private const int _TextGapTop = 5;
+        private const int _TextGapBottom = 5;
         private const int _TextGapLeft = 3;
         private const int _TextGapRight = 3;
-        private const int _ButtonGapTop = 10;
-        private const int _ButtonGapBottom = 9;
+        private const int _ButtonGapTop = 5;
+        private const int _ButtonGapBottom = 4;
         private const int _ButtonGapBetween = 1;
         private const int _ButtonGapLeft = 1;
         private const int _ButtonGapRight = 2;

@@ -89,6 +89,12 @@ namespace DevNotepad.Models.Themes
         [XmlAttribute("CursorColor")]
         public string CursorColor { get; set; }
 
+        /// <summary>
+        /// Used internally for tracking a filename
+        /// </summary>
+        [XmlIgnore]
+        public string Filename { get; set; }
+
         public Theme()
         {
             //Presets = new SerializableDictionary<string, PresetStyle>();
@@ -181,6 +187,8 @@ namespace DevNotepad.Models.Themes
             Presets.Add(style);
             return style;
         }
+
+        
 
         public void InitializeDictionary()
         {

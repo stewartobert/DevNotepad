@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using DevNotepad.Debug;
 using DevNotepad.Models.Themes;
 
 namespace DevNotepad.Config
@@ -30,6 +31,7 @@ namespace DevNotepad.Config
             {"bracemismatch", "Brace Mismatch"},
             {"character", "Character String"},
             {"class", "Class Name"},
+            {"variable", "Variable"},
             {"comment", "Comments"},
             {"boxcomment", "Box Comments"},
             {"doccomment", "Doc Comments"},
@@ -48,6 +50,7 @@ namespace DevNotepad.Config
             {"tag", "Tag"},
             {"unclosedstring", "Unclosed Single Line Strings"},
             {"unknownattribute", "Unknown Attribute"},
+            
             {"unknowntag", "Unknown Tag"},
             {"whitespace", "Whitespace"},
             {"type", "Type"}
@@ -70,6 +73,34 @@ namespace DevNotepad.Config
             {
                 _CurrentPreset = value;
                 OnThemeChanged(_CurrentPreset, null);
+            }
+        }
+
+
+        public static void SavePresets()
+        {
+            string path = Paths.ThemesPath;
+            if (Directory.Exists(path))
+            {
+                foreach (Theme preset in PresetList)
+                {
+                    try
+                    {
+                        XmlSerializer xmlSerializer = new XmlSerializer(typeof(Theme));
+                        string fileName = Path.Combine(path, preset.Filename);
+                        File.Delete(fileName);
+                        using (FileStream stream = File.OpenWrite(fileName))
+                        {
+                            xmlSerializer.Serialize(stream, preset);
+                        }
+                    }
+                    catch(Exception ex)
+                    {
+                        Log.Write(ex);
+                    }
+                }
+                
+
             }
         }
 
@@ -106,13 +137,7 @@ namespace DevNotepad.Config
                         }
                         if (nPreset != null)
                         {
-                            //File.Delete(file);
-                            
-                            // Rewrite for adding properties
-                            //using (FileStream fs = File.OpenWrite(file))
-                            //{
-                            //    x.Serialize(fs, nPreset);
-                            //}
+                            nPreset.Filename = Path.GetFileName(file);                            
                         }
                     }
                     catch (Exception ex)

@@ -27,9 +27,7 @@ namespace DevNotepad.GUI.Forms
     /// </summary>
     public partial class FormDocument : WeifenLuo.WinFormsUI.Docking.DockContent, IDocument
     {
-        [DllImport("user32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool InvalidateRect(IntPtr hWnd, IntPtr rect, bool bErase);
+        
         #region Properties
 
         private string _FileName = null;
@@ -45,6 +43,21 @@ namespace DevNotepad.GUI.Forms
             set
             {
                 _FileName = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets/Sets the document text
+        /// </summary>
+        public string DocumentText
+        {
+            get
+            {
+                return Editor.Text;
+            }
+            set
+            {
+                Editor.Text = value;
             }
         }
 
@@ -110,7 +123,7 @@ namespace DevNotepad.GUI.Forms
         {
             
             XmlMatchedTagHighlighter.tagMatch(false, Editor);
-            Editor.Indicators[8].Style = ScintillaNET.IndicatorStyle.RoundBox;
+            
 
             DocumentManager.UpdatePosition(Editor.NativeInterface.LineFromPosition(Editor.CurrentPos)+1, Editor.GetColumn(Editor.CurrentPos)+1);
 
@@ -126,6 +139,7 @@ namespace DevNotepad.GUI.Forms
                 TabText = _BaseTabText;
             }
 
+            // Highlight the current fold region
             HighlightFoldRegion();
             
             // Experimental attempt to find a way to highlight the currently active field region with a background color.
@@ -345,6 +359,14 @@ namespace DevNotepad.GUI.Forms
 
             SetHighlightColor();
 
+            #region Configure indicator styles
+
+            Editor.Indicators[4].Style = ScintillaNET.IndicatorStyle.RoundBox;
+            Editor.Indicators[4].Color = Themes.CurrentPreset.DefaultPreset.Back.ToColor().Invert().Lerp(Color.White, .7f);
+            Editor.Indicators[4].Alpha = 40;
+
+            #endregion
+
         }
 
         /// <summary>
@@ -474,8 +496,8 @@ namespace DevNotepad.GUI.Forms
 
         private string FontName(string font)
         {
-            return "Consolas";
-            //return (!String.IsNullOrEmpty(font) ? font : "Consolas");
+            //return "Consolas";
+            return (!String.IsNullOrEmpty(font) ? font : "Courier New");
         }
 
         #endregion
@@ -504,6 +526,8 @@ namespace DevNotepad.GUI.Forms
             //SetStyle(Schemes.HighlighterByName("csharp"));
             //SetDoubleBuffered(Editor);
 
+            // Pass the OnDocumentCreated event to the plugins so they can hook the editor
+            // however they need to.
             DocumentManager.PluginHost.OnDocumentCreated(Editor);
 
             Editor.NativeInterface.SendMessageDirect(ScintillaNET.Constants.SCI_BRACEHIGHLIGHTINDICATOR, true, 3);
@@ -524,6 +548,7 @@ namespace DevNotepad.GUI.Forms
             Editor.Indicators[0].DrawMode = ScintillaNET.IndicatorDrawMode.Overlay;
 
             //Editor.Indicators[].Style = ScintillaNET.IndicatorStyle.RoundBox;
+
         }
 
         private void FormDocument_FormClosed(object sender, FormClosedEventArgs e)
@@ -875,71 +900,6 @@ namespace DevNotepad.GUI.Forms
 
         #endregion
 
-        private void Editor_Paint(object sender, PaintEventArgs e)
-        {
-
-
-            //int curPos = Editor.CurrentPos;
-            //int curLine = Editor.NativeInterface.LineFromPosition(curPos);
-
-            //int topLine = Editor.NativeInterface.GetFoldParent(curLine);
-
-            //if (topLine > 0)
-            //{
-            //    int botLine = Editor.NativeInterface.GetLastChild(topLine, (int)Editor.NativeInterface.GetFoldLevel(topLine));
-
-
-
-            //    if (botLine > topLine)
-            //    {
-            //        //e.Graphics.ResetTransform();
-
-            //        int yStart = Editor.NativeInterface.PointYFromPosition(Editor.NativeInterface.PositionFromLine(topLine));
-            //        int yEnd = Editor.NativeInterface.PointYFromPosition(Editor.NativeInterface.PositionFromLine(botLine));
-            //        Rectangle rectFill = new Rectangle(0, yStart, Editor.Width, yEnd);
-
-                    
-                    
-            //        using (SolidBrush fillBrush = new SolidBrush(Color.FromArgb(50, 50, 50, 50)))
-            //        {
-                        
-            //            Editor.Invalidate(rectFill);
-            //            e.Graphics.FillRectangle(fillBrush, rectFill);
-            //            Editor.Update();
-
-            //        }
-
-            //    }
-
-            //}
-
-        }
-
-        public static void SetDoubleBuffered(System.Windows.Forms.Control c)
-        {
-            //Taxes: Remote Desktop Connection and painting
-            //http://blogs.msdn.com/oldnewthing/archive/2006/01/03/508694.aspx
-            if (System.Windows.Forms.SystemInformation.TerminalServerSession)
-                return;
-
-            System.Reflection.PropertyInfo aProp =
-                  typeof(System.Windows.Forms.Control).GetProperty(
-                        "DoubleBuffered",
-                        System.Reflection.BindingFlags.NonPublic |
-                        System.Reflection.BindingFlags.Instance);
-
-            aProp.SetValue(c, true, null);
-        }
-
-        private void FormDocument_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Editor_Validated(object sender, EventArgs e)
-        {
-            
-        }
         public void FocusEditor()
         {
             this.Focus();

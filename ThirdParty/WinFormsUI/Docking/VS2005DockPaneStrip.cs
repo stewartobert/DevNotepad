@@ -102,18 +102,18 @@ namespace WeifenLuo.WinFormsUI.Docking
         private const int _DocumentStripGapTop = 0;
         private const int _DocumentStripGapBottom = 1;
         private const int _DocumentTabMaxWidth = 200;
-        private const int _DocumentButtonGapTop = 10;
-        private const int _DocumentButtonGapBottom = 10;
+        private const int _DocumentButtonGapTop = 5;
+        private const int _DocumentButtonGapBottom = 5;
         private const int _DocumentButtonGapBetween = 0;
         private const int _DocumentButtonGapRight = 3;
         private const int _DocumentTabGapTop = 3;
         private const int _DocumentTabGapLeft = 3;
         private const int _DocumentTabGapRight = 3;
-        private const int _DocumentIconGapBottom = 6;
-        private const int _DocumentIconGapLeft = 8;
+        private const int _DocumentIconGapBottom = 2;
+        private const int _DocumentIconGapLeft = 5;
         private const int _DocumentIconGapRight = 0;
-        private const int _DocumentIconHeight = 18;
-        private const int _DocumentIconWidth = 18;
+        private const int _DocumentIconHeight = 15;
+        private const int _DocumentIconWidth = 15;
         private const int _DocumentTextGapRight = 3;
 
         #endregion
@@ -1347,16 +1347,20 @@ namespace WeifenLuo.WinFormsUI.Docking
                 rectText.Width = rect.Width - DocumentIconGapLeft - DocumentTextGapRight;
 
             Rectangle rectTab = DrawHelper.RtlTransform(this, rect);
-            Rectangle rectBack = DrawHelper.RtlTransform(this, rect);
+            //Rectangle rectBack = DrawHelper.RtlTransform(this, rect);
 
+
+            Rectangle rectBack = rect;
+            rectTab.Y = 1;
+            rectTab.Height = rectTab.Height + 3;
+
+            //rectBack.Y=rectTab.Y;
+            //rectBack.Height = rectTab.Height+2;
+            //rectBack.Width += rect.X;
+            //rectBack.X = 0;
             
-
-            rectTab.Y = 10;
-            rectTab.Height = rectTab.Height - 7;
-                        
-
-            rectBack.Width += rect.X;
-            rectBack.X = 0;
+            rectBack.Y = 4;
+            rectBack.Height = 100;
 
             rectText = DrawHelper.RtlTransform(this, rectText);
             rectIcon = DrawHelper.RtlTransform(this, rectIcon);
@@ -1366,12 +1370,16 @@ namespace WeifenLuo.WinFormsUI.Docking
                 Color startColor = DockPane.DockPanel.Skin.DockPaneStripSkin.DocumentGradient.ActiveTabGradient.StartColor;
                 Color endColor = DockPane.DockPanel.Skin.DockPaneStripSkin.DocumentGradient.ActiveTabGradient.EndColor;
                 LinearGradientMode gradientMode = DockPane.DockPanel.Skin.DockPaneStripSkin.DocumentGradient.ActiveTabGradient.LinearGradientMode;
-                g.FillPath(new LinearGradientBrush(rectBack, startColor, endColor, gradientMode), path);
+                using (LinearGradientBrush brush = new LinearGradientBrush(rectBack, startColor, endColor, 90))
+                {
+                    //g.FillPath(new LinearGradientBrush(new Rectangle(rectTab.X, rectBack.Y, rectTab.Width, rectBack.Height), startColor, endColor, gradientMode));
 
+                    g.FillRectangle(brush, rectBack);
+                }
                 Color activeBorder = DockPane.DockPanel.Skin.DockPaneStripSkin.DocumentGradient.DockStripGradient.EndColor.Lerp(Color.Black, .8f);
                 using (Pen borderPen = new Pen(activeBorder))
                 {
-                    g.DrawRectangle(borderPen, new Rectangle(rectTab.X, rectBack.Y+2, rectTab.Width, rectBack.Height));
+                    g.DrawRectangle(borderPen, rectBack);
                 }
                 //g.DrawPath(PenDocumentTabActiveBorder, path);
 
@@ -1393,7 +1401,7 @@ namespace WeifenLuo.WinFormsUI.Docking
                 TextRenderer.DrawText(g, tab.Content.DockHandler.TabText, TextFont, rectText, textColor, DocumentTextFormat);
             }
 
-            if (rectTab.Contains(rectIcon) && DockPane.DockPanel.ShowDocumentIcon)
+            //if (rectTab.Contains(rectIcon) && DockPane.DockPanel.ShowDocumentIcon)
                 g.DrawImage(tab.Content.DockHandler.Icon.ToBitmap(), rectIcon);
                 
         }

@@ -76,8 +76,6 @@
             this.Editor.Styles.Max.Size = 9F;
             this.Editor.TabIndex = 0;
             this.Editor.CharAdded += new System.EventHandler<ScintillaNET.CharAddedEventArgs>(this.Editor_CharAdded);
-            this.Editor.Paint += new System.Windows.Forms.PaintEventHandler(this.Editor_Paint);
-            this.Editor.Validated += new System.EventHandler(this.Editor_Validated);
             // 
             // FormDocument
             // 
@@ -95,7 +93,6 @@
             this.Text = "FormDocument";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDocument_FormClosed);
             this.Load += new System.EventHandler(this.FormDocument_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormDocument_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.Editor)).EndInit();
             this.ResumeLayout(false);
 
@@ -104,5 +101,7 @@
         #endregion
 
         private ScintillaNET.Scintilla Editor;
+
+
     }
 }
